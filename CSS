@@ -1,0 +1,176 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #0f172a;
+    color: white;
+    line-height: 1.6;
+}
+
+header {
+    background: linear-gradient(135deg, #2563eb, #7c3aed);
+    padding: 40px;
+    text-align: center;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+header h1 {
+    font-size: 3rem;
+}
+
+header p {
+    margin-bottom: 20px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin: 0 10px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+nav a:hover {
+    color: #facc15;
+}
+
+.slide {
+    padding: 80px 10%;
+    border-bottom: 1px solid rgba(255,255,255,0.1);
+    animation: fadeIn 1s ease;
+}
+
+h2 {
+    margin-bottom: 25px;
+    font-size: 2.2rem;
+    color: #60a5fa;
+}
+
+.fun-facts {
+    margin-top: 30px;
+    background: rgba(255,255,255,0.05);
+    padding: 20px;
+    border-radius: 12px;
+}
+
+.fun-facts ul {
+    margin-top: 10px;
+}
+
+.scores {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.card {
+    background: rgba(255,255,255,0.05);
+    padding: 20px;
+    flex: 1;
+    min-width: 250px;
+    border-radius: 12px;
+}
+
+.growth-box {
+    margin-top: 30px;
+    background: #1e293b;
+    padding: 20px;
+    border-left: 5px solid #22c55e;
+    border-radius: 10px;
+}
+
+.book {
+    display: flex;
+    gap: 20px;
+    margin-bottom: 40px;
+    align-items: center;
+}
+
+.book img {
+    width: 150px;
+    border-radius: 10px;
+    transition: transform 0.3s;
+}
+
+.book img:hover {
+    transform: scale(1.05);
+}
+
+blockquote {
+    margin: 20px 0;
+    padding: 20px;
+    background: rgba(255,255,255,0.05);
+    border-left: 5px solid #3b82f6;
+    font-style: italic;
+}
+
+.creative-box {
+    display: flex;
+    gap: 20px;
+    margin-top: 30px;
+    flex-wrap: wrap;
+}
+
+.creative-card {
+    flex: 1;
+    min-width: 200px;
+    background: linear-gradient(135deg, #9333ea, #2563eb);
+    padding: 30px;
+    text-align: center;
+    border-radius: 15px;
+    font-size: 1.2rem;
+}
+
+.awards-container {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.award {
+    flex: 1;
+    min-width: 220px;
+    background: gold;
+    color: black;
+    padding: 30px;
+    border-radius: 15px;
+    text-align: center;
+    font-weight: bold;
+    font-size: 1.2rem;
+}
+
+.goals-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+}
+
+.goal-card {
+    background: rgba(255,255,255,0.05);
+    padding: 25px;
+    border-radius: 15px;
+}
+
+footer {
+    text-align: center;
+    padding: 30px;
+    background: #020617;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
